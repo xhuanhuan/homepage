@@ -1,0 +1,67 @@
+body
+{
+ background:url(back/back2.JPG);
+ background-size:100% 130%;
+ background-repeat: no-repeat;
+ background-attachment:fixed;
+ TEXT-ALIGN: center;
+}
+.daohang
+{
+	display:block;
+	background-color:#E8DBA0;
+	color:white;
+	font-size:20px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:40px;
+	width:160px;
+	height:80px;
+}
+
+#example-navbar-collapse
+{
+ 	padding-left:160px;
+	padding-right:160px;
+}
+#intro
+{
+	margin-top:80px;
+}
+.item1
+{ 
+    width:600px;
+	height:auto;
+	margin-left:25%;
+	margin-top:13%;
+	padding:40px 40px;
+	background:rgba(230,220,165,0.8);
+	font-family:mySecFont;
+	font-size:18px;
+	text-align:left;
+}
+
+.foot1
+{
+	width:50px;
+	height:50px;
+	font-size:20px;
+	background:rgba(255,255,255,0.8);
+	margin-right:10px;
+	float:left;
+}
+.foot2
+{
+	text-align:right;
+	font-size:18px;
+	color:white;
+	margin:10px 25px 25px 0;
+}
+@font-face{
+	font-family: mySecFont;
+	src:url(Sansation_Regular.ttf);
+}
+@font-face{
+	font-family: myFirstFont;
+	src:url(Artifika-Regular.ttf);
+}
