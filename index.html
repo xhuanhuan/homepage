@@ -4,16 +4,18 @@
 	<meta charset="utf-8">
 	<title>Bootstrap 实例 - 默认的导航栏</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	
 	<link rel="stylesheet"  href="style.css" />
+	<script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/main.js'></script>
 </head>
 
 <body>
 
 
-<nav class="navbar navbar-pill " role="navigation" >
-	<div class="navbar-header" style='margin:auto;'>	
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+<nav class="navbar navbar-default " role="navigation" >
+	<div class="navbar-header">	
+		<button id="navbutton" onclick="changecss()" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" style="margin-right:47%;">
 			<span class="sr-only">切换导航</span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -23,42 +25,187 @@
 		</button>
 	</div>
     <div class="collapse navbar-collapse" id="example-navbar-collapse">
-		<ul class="nav navbar-nav">
-			<li><a style="padding-top:30px;" class="daohang" href="#intro" data-toggle="tab">INTRO</a></li>
-			<li><a style="padding-top:30px;" class="daohang" href="#about" data-toggle="tab">ABOUT</a></li>
-			<li><a style="padding-top:30px;" class="daohang" href="#galley" data-toggle="tab">GALLERY</a></li>
-			<li><a style="padding-top:30px;" class="daohang" href="#video" data-toggle="tab">VIDEO</a></li>
-			<li><a style="padding-top:30px;" class="daohang" href="#contact" data-toggle="tab">CONTACT</a></li>
+		<ul class="nav navbar-nav" id="navul">
+			<li class="daohang-li"><a style="padding-top:30px;" class="daohang" href="#intro" data-toggle="tab">INTRO</a></li>
+			<li class="daohang-li"><a style="padding-top:30px;" class="daohang" href="#about" data-toggle="tab">ABOUT</a></li>
+			<li class="daohang-li"><a style="padding-top:30px;" class="daohang" href="#galley" data-toggle="tab">GALLERY</a></li>
+			<li class="daohang-li"><a style="padding-top:30px;" class="daohang" href="#video" data-toggle="tab">VIDEO</a></li>
+			<li style="margin-right:0;"class="daohang-li"><a style="padding-top:30px;" class="daohang" href="#contact" data-toggle="tab">CONTACT</a></li>
 		</ul>
 	</div>
 </nav>
 
 
-<div class="tab-content" style="margin-bottom:20px;">
-  <div class="tab-pane fade active" id="intro">
-    <div class="container">
-      <div class="row">
-	
-         <div class="col-sm-6 col-md-6 col-lg-6" style="margin-left:25%;">
-          <p style="font-size: 50px;color:#B5A55C;" ><span class="glyphicon glyphicon-camera" ></span><br />FLAT design</p>
-	     </div>
-	  
-	     <div class="item1" >
-         <p>
-		  Flat design used Hero Slider for left and right page transitions. Responsiveness is based on Bootstrap 4 alpha 2.Images are taken from Unsplash.This web template is provided by templatemo for free of charge.
-         </p>
-		  <p>
-          Mauris eros lacus, sollicitudin sit amet lacinia et, vehicula bibendum felis.Pellentesque in quam iaculis erat iaculis lacinia.Donec sagittis sapien odio, a sodales velit elementum nec.
-          </p>
-	      </div> 
-		  
-      </div>
+<div class="tab-content" style="padding:1% 5%;border:1px solid black;">
+
+  <div class="tab-pane fade" id="intro">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-md-offset-3 col-sm-offset-3 col-lg-offset-3">
+        <p style="font-size: 45px;color:#B5A55C;" ><span class="glyphicon glyphicon-camera" ></span><br />FLAT design</p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-md-offset-3 col-sm-offset-3 col-lg-offset-3 item1" >
+        <p>
+	    Flat design used Hero Slider for left and right page transitions. Responsiveness is based on Bootstrap 4 alpha 2.Images are taken from Unsplash.This web template is provided by templatemo for free of charge.
+        </p>
+		<p>
+        Mauris eros lacus, sollicitudin sit amet lacinia et, vehicula bibendum felis.Pellentesque in quam iaculis erat iaculis lacinia.Donec sagittis sapien odio, a sodales velit elementum nec.
+        </p>
+	  </div> 
     </div>
   </div>
+  
+  <div class="tab-pane fade " id="about">
+  	<div class="row">
+	
+	  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-md-offset-2 col-sm-offset-2 col-lg-offset-2 item2-1">
+        <p>
+	    Flat design used Hero Slider for left and right page transitions. Responsiveness is based on Bootstrap 4 alpha 2.Images are taken from Unsplash.This web template is provided by templatemo for free of charge.
+        </p>
+		<p>
+        Mauris eros lacus, sollicitudin sit amet lacinia et, vehicula bibendum felis.Pellentesque in quam iaculis erat iaculis lacinia.Donec sagittis sapien odio, a sodales velit elementum nec.
+        </p>
+	  </div> 
+	  
+	  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 item2-2" >
+        <p>
+	    Flat design used Hero Slider for left and right page transitions. Responsiveness is based on Bootstrap 4 alpha 2.Images are taken from Unsplash.This web template is provided by templatemo for free of charge.
+        </p>
+		<p>
+        Mauris eros lacus, sollicitudin sit amet lacinia et, vehicula bibendum felis.Pellentesque in quam iaculis erat iaculis lacinia.Donec sagittis sapien odio, a sodales velit elementum nec.
+        </p>
+	  </div> 
+	  
+    </div>
+  </div>
+  
+  <div class="tab-pane fade" id="galley" >
+    <div class="row">
+      <div class=" col-sm-3 col-md-3 col-lg-3 col-xs-12 col-sm-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-offset-1 mygalley" >
+	   <a id="figure1" data-toggle="modal" data-target="#myModal"><img src="mygalley/1.jpg" class="img-responsive" alt="Cinque Terre"> </a>
+	  </div>
+	  <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12  mygalley">
+	   <a id="figure2" data-toggle="modal" data-target="#myModal"><img src="mygalley/2.jpg" class="img-responsive" alt="Cinque Terre"> </a>
+	  </div>
+	  <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12  mygalley">
+	   <a id="figure3" data-toggle="modal" data-target="#myModal"><img src="mygalley/3.jpg" class="img-responsive" alt="Cinque Terre"> </a>
+	  </div>
+	</div>
+	 <div class="row">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-sm-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-offset-1 mygalley">
+	   <a id="figure4" data-toggle="modal" data-target="#myModal"><img src="mygalley/4.jpg" class="img-responsive" alt="Cinque Terre"> </a>
+	  </div>
+	  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3  mygalley">
+	   <a id="figure5" data-toggle="modal" data-target="#myModal"><img src="mygalley/5.jpg" class="img-responsive" alt="Cinque Terre"> </a>
+	  </div>
+	  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3  mygalley">
+	   <a id="figure6" data-toggle="modal" data-target="#myModal"><img src="mygalley/6.jpg" class="img-responsive" alt="Cinque Terre"> </a>
+	  </div>
+	</div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="tab-pane fade" id="video">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="margin-left:25%;">
+        <p style="font-size: 45px;color:#B5A55C;" ><span class="glyphicon glyphicon-camera" ></span><br />FLAT design</p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item1" >
+        <p>
+	    Flat design used Hero Slider for left and right page transitions. Responsiveness is based on Bootstrap 4 alpha 2.Images are taken from Unsplash.This web template is provided by templatemo for free of charge.
+        </p>
+		<p>
+        Mauris eros lacus, sollicitudin sit amet lacinia et, vehicula bibendum felis.Pellentesque in quam iaculis erat iaculis lacinia.Donec sagittis sapien odio, a sodales velit elementum nec.
+        </p>
+	  </div> 
+    </div>
+  </div>
+  
+  
+  <div class="tab-pane fade" id="contact">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="margin-left:25%;">
+        <p style="font-size: 45px;color:#B5A55C;" ><span class="glyphicon glyphicon-camera" ></span><br />FLAT design</p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item1" >
+        <p>
+	    Flat design used Hero Slider for left and right page transitions. Responsiveness is based on Bootstrap 4 alpha 2.Images are taken from Unsplash.This web template is provided by templatemo for free of charge.
+        </p>
+		<p>
+        Mauris eros lacus, sollicitudin sit amet lacinia et, vehicula bibendum felis.Pellentesque in quam iaculis erat iaculis lacinia.Donec sagittis sapien odio, a sodales velit elementum nec.
+        </p>
+	  </div> 
+    </div>
+  </div>
+
+  
 </div>
+<!-- ccccccccccccccccccccccccccccc -->
+  <!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- <div class="modal-header" > -->
+				<!-- <button type="button" style="color:white;font-size:30px;"class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button> -->
+		<!-- 	</div> -->
+		
+  <div id="myCarousel" class="carousel slide">
+      <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item fg1">
+            <img src="mygalley/1.jpg" alt="First slide">
+			<div class="carousel-caption" >1/6</div>
+        </div>
+        <div class="item fg2">
+            <img src="mygalley/2.jpg" alt="Second slide">
+			<div class="carousel-caption">2/6</div>
+        </div>
+        <div class="item fg3">
+            <img src="mygalley/3.jpg" alt="Third slide">
+			<div class="carousel-caption">3/6</div>
+        </div>
+		<div class="item fg4">
+            <img src="mygalley/4.jpg" alt="Third slide">
+			<div class="carousel-caption">4/6</div>
+        </div>
+		<div class="item fg5">
+            <img src="mygalley/5.jpg" alt="Third slide">
+			<div class="carousel-caption">5/6</div>
+        </div>
+		<div class="item fg6">
+            <img src="mygalley/6.jpg" alt="Third slide">
+			<div class="carousel-caption">6/6</div>
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" style="padding-top:30%;color:black;font-size:50px;"
+        data-slide="prev" >&lsaquo;
+    </a>
+    <a class="carousel-control right" href="#myCarousel" style="padding-top:30%;color:black;font-size:50px;"
+        data-slide="next">&rsaquo;
+    </a>
+</div>
+		
+		
+		</div>
+	</div>	
+</div>
+
+
 <div class="container">
 <div class="row">
-<div class="col-md-4 col-lg-4 col-sm-4">
+<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12" style="float:left;" >
 <ul class="nav navbar-nav" >
 <li class="foot1"><a href="#">f</a></li>
 <li class="foot1"><a href="#">G+</a></li>
@@ -68,15 +215,13 @@
 </ul>
 </div>
 
-<div class="col-md-8 col-lg-8 col-sm-8" >
-<p class="foot2">Copyright © 2016 Your Company -More Templates <a href="http://www.cssmoban.com/">模板之家</a> - Collect from <a href="http://www.cssmoban.com/">网页模板</a></p>
+<div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 foot2" style="float:right;" >
+<p >Copyright © 2016 Your Company -More Templates <a href="http://www.cssmoban.com/">模板之家</a> - Collect from <a href="http://www.cssmoban.com/">网页模板</a></p>
 </div>
 </div>
 </div>
 
 
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src='js/main.js'></script>
+</div>
 </body>
 </html>
