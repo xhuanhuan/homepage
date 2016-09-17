@@ -68,20 +68,26 @@ body
 
 .foot1
 {
-	width:50px;
-	height:50px;
+	height:48px;
 	font-size:20px;
-	background:rgba(255,255,255,0.8);
-	margin:10px 10px;
-	float:left;
+    margin-left:1%;
+	width:100%;
+		
+}
+.lifoot{
+	width:48px;
+	height:48px;
+	margin-left:3%;
+	float:left;	
+    background:rgba(255,255,255,0.6);
 }
 .foot2
 {
-	text-align:left;
 	font-size:16px; 
 	color:black;
- 	padding:10px 10px; 
-	line-height:40px;
+ 	margin:0 2%;
+	line-height:48px;
+	
 }
 @font-face{
 	font-family: mySecFont;
