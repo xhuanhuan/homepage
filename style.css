@@ -34,31 +34,44 @@ body
 	background-color:#E8DBA0;
 	
 }
+.navbar-header{
+	text-align:left;
+	background-color:gray;
+	 
+}
+#navbutton{
+	width:16%;
+	margin-right:42%;
+}
 #navul{
-	margin:3% 15%;
-	width:70%;
+	margin-left:0;
+	width:100%;
+	/* border:1px solid yellow; */
 }
 .daohang-li{
-	margin-right:2.5%;
+
 	width:18%;
 	text-align:center;
-	
+/* 	border:1px solid red; */
+	float:left;
 }
 .daohang1
 {
 	display:block;
 	/* background:rgba(230,220,165,0.8); */
 	color:black;
+	width:100%;
+/* 	border:1px solid blue; */
 }
 .navbar-default 
 {
 	border-color:transparent; 
 	background:rgba(255,255,255,0);
 }
+
 #example-navbar-collapse
 {
- 	/* padding-left:13.6%; */
-
+/*  border:1px solid blue; */
 }
 #intro
 {
@@ -69,12 +82,18 @@ body
     padding-right:12%; 
 	margin-top:5%;
 }
+.img-responsive
+{
+	width:100%;
+	max-height:140px;
+    height:140px; 
+    height:expression(document.body.clientWidth>140?"140px":"auto");
+    overflow:hidden;
+/*     border:1px solid #bebebe; */
+}
 .item1
 { 
-    /* width:50%; 
-	height:auto; 
-	margin-left:25%;
-	 margin-top:5%; */
+   
 	padding:3% 3%;
 	background:rgba(230,220,165,0.8);
 	font-family:mySecFont;
@@ -137,8 +156,9 @@ body
 }
 .mygalley
 {
-	height:90%;
-	/* border:1px solid black; */
+	/*height:155px;
+	 border:1px solid black; */
+ 
 	margin-right:2%;
 	margin-bottom:2%;
 	padding:1%;
@@ -155,8 +175,3 @@ body
 	padding:2% 5%;
 
 }
-#left,#right 
- {
-    
-      
-  }

@@ -64,15 +64,19 @@ $('#figure6').click(function(){
 });
 
     x=$(window).width();
-	if (x>767){
+	if ($("#navbutton").css('display')=='none'){
 	$("ul#navul li a").addClass("daohang");
-	$('.daohang-li').css({width:'18%','margin-left':'0'});
+	$('.daohang-li').css({width:'18%','margin-left':'2%'});
     $("ul#navul").removeClass("daohang1");
+	$('#example-navbar-collapse').css({'background-color':'rgba(255,255,255,0)'});
+	$('#navandtab').css({'margin-top':'3%'});
 	}
 	else {
 		$("ul#navul li a").removeClass("daohang");
 	  $("ul#navul").addClass("daohang1");
-	  $('.daohang-li').css({width:'40%','margin-left':'30%'});
+	  $('.daohang-li').css({width:'100%','margin-left':'0'});
+	  $('#example-navbar-collapse').css({'background-color':'gray'});
+	  $('#navandtab').css({'margin-top':'0'});
 	};
 	
 	test();
@@ -84,13 +88,17 @@ $('#figure6').click(function(){
 	if ($("#navbutton").css('display')=='none')
 	{
 	$("ul#navul li a").addClass("daohang");
-	$('.daohang-li').css({width:'18%','margin-left':'0'});
+	$('.daohang-li').css({width:'18%','margin-left':'2%'});
     $("ul#navul").removeClass("daohang1");
+    $('#example-navbar-collapse').css({'background-color':'rgba(255,255,255,0)'});
+	$('#navandtab').css({'margin-top':'3%'});
 	}
 	else {
 		$("ul#navul li a").removeClass("daohang");
 	  $("ul#navul").addClass("daohang1");
-	  $('.daohang-li').css({width:'40%','margin-left':'30%'});
+	  $('.daohang-li').css({width:'100%','margin-left':'0'});
+	  $('#example-navbar-collapse').css({'background-color':'gray'});
+	  $('#navandtab').css({'margin-top':'0'});
 	}
 /* 	$('#example-navbar-collapse a:first').tab('show');	*/
     test();
@@ -145,11 +153,13 @@ function sliddown(){
 
 function test(){
 var x=$('#navandtab').height()/$(window).height();
-	if (x>0.7){
+	if (x>0.8){
+		
 		$('.footer1').hide();
 		$('.footer2').show();
 	}
 	else{
+	/* 	alert('f1'); */
 		$('.footer2').hide();
 		$('.footer1').show();
 	};
