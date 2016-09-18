@@ -23,16 +23,13 @@ body
 	margin-right:2.5%;
 	width:18%;
 	text-align:center;
+	
 }
 .daohang1
 {
 	display:block;
-	background-color:white;
+	/* background:rgba(230,220,165,0.8); */
 	color:black;
-	font-size:20px;
-	margin-left:30%;
-	width:150px;
-	height:auto;
 }
 .navbar-default 
 {
@@ -121,11 +118,26 @@ body
 }
 .mygalley
 {
-	height:80%;
+	height:90%;
 	/* border:1px solid black; */
 	margin-right:2%;
 	margin-bottom:2%;
 	padding:1%;
 	background-color:#EEAA66;
 }
+.form-control{
+	
+	background:rgba(230,220,165,0.8);
+	font-size:20px;
+	padding:2% 5%;
 
+}
+#message{
+	padding:2% 5%;
+
+}
+#left,#right 
+ {
+    
+      
+  }
