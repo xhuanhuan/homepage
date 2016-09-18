@@ -145,7 +145,7 @@ function sliddown(){
 
 function test(){
 var x=$('#navandtab').height()/$(window).height();
-	if (x>1){
+	if (x>0.7){
 		$('.footer1').hide();
 		$('.footer2').show();
 	}
