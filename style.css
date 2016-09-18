@@ -5,7 +5,26 @@ body
  background-repeat: no-repeat;
  background-attachment:fixed;
  TEXT-ALIGN: center;
+  height:100%; 
 }
+ .container{  
+  position:relative;  
+ }  
+
+
+  .footer1{  
+  position:fixed ;
+  bottom:1%;  
+  width:100%;  
+  display:none;
+
+ } 
+ .footer2{  
+/*   position:relative;
+  bottom:0;  */ 
+  width:100%;  
+  display:none;
+ } 
 .daohang
 {
 	display:block;
@@ -43,7 +62,7 @@ body
 }
 #intro
 {
-	margin-top:5%;
+	margin-top:0;
 }
 #galley{
 	padding-left:12%; 
@@ -80,7 +99,7 @@ body
 }
 .foot2
 {
-	font-size:16px; 
+	font-size:15px; 
 	color:black;
  	margin:0 2%;
 	line-height:48px;
