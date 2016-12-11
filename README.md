@@ -5,4 +5,4 @@
 
 **根据模板之家临摹**
 
-包含intro、about、galley、video、contact几部分， 主要使用bootstrap和jQuery,练习了模态框、轮播、表单等。
+包含intro、about、galley、video、contact几部分， 主要使用bootstrap和jQuery,练习了导航栏、模态框、轮播、表单等。
